@@ -1,0 +1,14 @@
+{
+	"": [
+		"src/routes/+layout.js",
+		"src/routes/+layout.js"
+	],
+	"categories": [
+		"src/routes/categories/+page.js",
+		"src/routes/+layout.js"
+	],
+	"categories/[slug]": [
+		"src/routes/categories/[slug]/+page.js",
+		"src/routes/+layout.js"
+	]
+}
