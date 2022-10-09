@@ -16,8 +16,10 @@
   export let data: any | object;
 </script>
 
+<div class="text-slate-200">{JSON.stringify(data)}</div>
+
 <Header />
-<Navbar data={data?.categories} />
+<Navbar data={data} />
 
 <main>
   {#if !isPageLoaded}<Loading />{/if}

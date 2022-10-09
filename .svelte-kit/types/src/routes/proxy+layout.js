@@ -5,14 +5,15 @@ import { request, gql } from "graphql-request";
 export function load() {
   const query = gql`
     {
-      categories(level:0) {
-        id
+      rockets(limit: 10) {
         name
-        slug
-        productsCount
+        id
+        active
       }
     }
   `;
-  const data = request("http://127.0.0.1:8000/graphql", query);
-  return data;
+  const data = request("https://api.spacex.land/graphql/", query);
+
+  return data
+
 }

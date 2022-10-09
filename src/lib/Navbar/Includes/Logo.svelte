@@ -1,13 +1,15 @@
 <script lang="ts">
-  import { darkMode } from "$lib/stores";
+  import { NavBrand} from 'flowbite-svelte'
+
   import classNames from 'classnames';
 
-  export let className: string = 'w-12';
+  export let className: string = 'self-center whitespace-nowrap text-xl font-semibold dark:text-white';
 
 </script>
 
-<a href="/" class="inline-flex">
-    <img alt="logo" class={classNames(className, $$props.class)} 
-    src="{$darkMode? '/images/logo-dark.png': '/images/logo-light.png'}"
-    />
-</a>
+
+<NavBrand href="/">
+  <span class={classNames(className, $$props.class)}>
+    SPACEX
+  </span>
+</NavBrand>

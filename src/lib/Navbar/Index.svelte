@@ -13,7 +13,7 @@
 
 <nav class="sticky top-0 {darkBg}">
   <div class="flex flex-wrap py-2 px-4 justify-between items-center mx-auto">
-    <Logo className="w-9" />
+    <Logo />
     <Menu {data} />
     <div class="md:hidden">
       <Hamburger bind:open type="spring" --color={$darkMode ? "white": "black"}/>
