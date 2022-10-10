@@ -19,9 +19,14 @@ module.exports = {
         primary: "#334155",
         secondary: "#64748b",
       },
-      plugins: [
-        require('flowbite/plugin')
-      ],
     },
   },
+  corePlugins: {
+    aspectRatio: false
+  },
+  plugins: [
+    require('flowbite/plugin'),
+    require('@tailwindcss/line-clamp'),
+    require('@tailwindcss/aspect-ratio')
+  ],
 };
