@@ -1,6 +1,6 @@
 <script lang="ts">
   import BrandSmallCard from "$lib/Brands/BrandSmallCard.svelte";
-import HighlightSmallCard from "$lib/Highlights/HighlightSmallCard.svelte";
+  import HighlightSmallCard from "$lib/Highlights/HighlightSmallCard.svelte";
 
   export let data: any | object;
 
@@ -22,19 +22,11 @@ import HighlightSmallCard from "$lib/Highlights/HighlightSmallCard.svelte";
 </svelte:head>
 
 <section class="px-2 py-4 text-slate-100">
-  <!-- <div>
-    <ul>
-      {#each data.categories as item, i}
-        <li on:click={toggleCategoryRoot(item)} class="cursor-pointer">    
-          {item.name}
-        </li>
-      {/each}
-    </ul>
-  </div> -->
-
   <div class="flex flex-col md:flex-row">
     <!-- Root category -->
-    <ul class="basis-1/4 dark:bg-slate-600  px-6 md:px-2 py-2 space-y-4 cursor-pointer">
+    <ul
+      class="basis-1/4 dark:bg-slate-600  px-6 md:px-2 py-2 space-y-4 cursor-pointer"
+    >
       <li class="border-l-4 border-transparent px-1 hover:border-blue-500">
         Category-long-1
       </li>
@@ -80,11 +72,15 @@ import HighlightSmallCard from "$lib/Highlights/HighlightSmallCard.svelte";
         class="grid xl:grid-cols-6 sm:grid-cols-2 md:grid-cols-4 gap-2 dark:bg-slate-600 "
       >
         <ul class="dark:bg-slate-600 p-2 space-y-2">
-          <p class="font-semibold line-clamp-2 mb-1 cursor-pointer {classHover}">
+          <p
+            class="font-semibold line-clamp-2 mb-1 cursor-pointer {classHover}"
+          >
             Subcategory-long -long -long -long
             -long-long-long-long-long-long-long-long-long-long-1
           </p>
-          <li class="dark:bg-slate-500 cursor-pointer {classHover}">item-long -long-long -1</li>
+          <li class="dark:bg-slate-500 cursor-pointer {classHover}">
+            item-long -long-long -1
+          </li>
           <li class="dark:bg-slate-500 cursor-pointer {classHover}">
             item--long-long-long-long -long-long2
           </li>
@@ -93,11 +89,15 @@ import HighlightSmallCard from "$lib/Highlights/HighlightSmallCard.svelte";
           <li class="dark:bg-slate-500 cursor-pointer {classHover}">item-5</li>
         </ul>
         <ul class="dark:bg-slate-600 p-2 space-y-2">
-          <p class="font-semibold line-clamp-2 mb-1 cursor-pointer {classHover}">
+          <p
+            class="font-semibold line-clamp-2 mb-1 cursor-pointer {classHover}"
+          >
             Subcategory-long -long -long -long
             -long-long-long-long-long-long-long-long-long-long-1
           </p>
-          <li class="dark:bg-slate-500 cursor-pointer {classHover}">item-long -long-long -1</li>
+          <li class="dark:bg-slate-500 cursor-pointer {classHover}">
+            item-long -long-long -1
+          </li>
           <li class="dark:bg-slate-500 cursor-pointer {classHover}">
             item--long-long-long-long -long-long2
           </li>
@@ -106,11 +106,15 @@ import HighlightSmallCard from "$lib/Highlights/HighlightSmallCard.svelte";
           <li class="dark:bg-slate-500 cursor-pointer {classHover}">item-5</li>
         </ul>
         <ul class="dark:bg-slate-600 p-2 space-y-2">
-          <p class="font-semibold line-clamp-2 mb-1 cursor-pointer {classHover}">
+          <p
+            class="font-semibold line-clamp-2 mb-1 cursor-pointer {classHover}"
+          >
             Subcategory-long -long -long -long
             -long-long-long-long-long-long-long-long-long-long-1
           </p>
-          <li class="dark:bg-slate-500 cursor-pointer {classHover}">item-long -long-long -1</li>
+          <li class="dark:bg-slate-500 cursor-pointer {classHover}">
+            item-long -long-long -1
+          </li>
           <li class="dark:bg-slate-500 cursor-pointer {classHover}">
             item--long-long-long-long -long-long2
           </li>
@@ -119,11 +123,15 @@ import HighlightSmallCard from "$lib/Highlights/HighlightSmallCard.svelte";
           <li class="dark:bg-slate-500 cursor-pointer {classHover}">item-5</li>
         </ul>
         <ul class="dark:bg-slate-600 p-2 space-y-2">
-          <p class="font-semibold line-clamp-2 mb-1 cursor-pointer {classHover}">
+          <p
+            class="font-semibold line-clamp-2 mb-1 cursor-pointer {classHover}"
+          >
             Subcategory-long -long -long -long
             -long-long-long-long-long-long-long-long-long-long-1
           </p>
-          <li class="dark:bg-slate-500 cursor-pointer {classHover}">item-long -long-long -1</li>
+          <li class="dark:bg-slate-500 cursor-pointer {classHover}">
+            item-long -long-long -1
+          </li>
           <li class="dark:bg-slate-500 cursor-pointer {classHover}">
             item--long-long-long-long -long-long2
           </li>
@@ -132,11 +140,15 @@ import HighlightSmallCard from "$lib/Highlights/HighlightSmallCard.svelte";
           <li class="dark:bg-slate-500 cursor-pointer {classHover}">item-5</li>
         </ul>
         <ul class="dark:bg-slate-600 p-2 space-y-2">
-          <p class="font-semibold line-clamp-2 mb-1 cursor-pointer {classHover}">
+          <p
+            class="font-semibold line-clamp-2 mb-1 cursor-pointer {classHover}"
+          >
             Subcategory-long -long -long -long
             -long-long-long-long-long-long-long-long-long-long-1
           </p>
-          <li class="dark:bg-slate-500 cursor-pointer {classHover}">item-long -long-long -1</li>
+          <li class="dark:bg-slate-500 cursor-pointer {classHover}">
+            item-long -long-long -1
+          </li>
           <li class="dark:bg-slate-500 cursor-pointer {classHover}">
             item--long-long-long-long -long-long2
           </li>
@@ -145,11 +157,15 @@ import HighlightSmallCard from "$lib/Highlights/HighlightSmallCard.svelte";
           <li class="dark:bg-slate-500 cursor-pointer {classHover}">item-5</li>
         </ul>
         <ul class="dark:bg-slate-600 p-2 space-y-2">
-          <p class="font-semibold line-clamp-2 mb-1 cursor-pointer {classHover}">
+          <p
+            class="font-semibold line-clamp-2 mb-1 cursor-pointer {classHover}"
+          >
             Subcategory-long -long -long -long
             -long-long-long-long-long-long-long-long-long-long-1
           </p>
-          <li class="dark:bg-slate-500 cursor-pointer {classHover}">item-long -long-long -1</li>
+          <li class="dark:bg-slate-500 cursor-pointer {classHover}">
+            item-long -long-long -1
+          </li>
           <li class="dark:bg-slate-500 cursor-pointer {classHover}">
             item--long-long-long-long -long-long2
           </li>
@@ -158,11 +174,15 @@ import HighlightSmallCard from "$lib/Highlights/HighlightSmallCard.svelte";
           <li class="dark:bg-slate-500 cursor-pointer {classHover}">item-5</li>
         </ul>
         <ul class="dark:bg-slate-600 p-2 space-y-2">
-          <p class="font-semibold line-clamp-2 mb-1 cursor-pointer {classHover}">
+          <p
+            class="font-semibold line-clamp-2 mb-1 cursor-pointer {classHover}"
+          >
             Subcategory-long -long -long -long
             -long-long-long-long-long-long-long-long-long-long-1
           </p>
-          <li class="dark:bg-slate-500 cursor-pointer {classHover}">item-long -long-long -1</li>
+          <li class="dark:bg-slate-500 cursor-pointer {classHover}">
+            item-long -long-long -1
+          </li>
           <li class="dark:bg-slate-500 cursor-pointer {classHover}">
             item--long-long-long-long -long-long2
           </li>
@@ -171,11 +191,15 @@ import HighlightSmallCard from "$lib/Highlights/HighlightSmallCard.svelte";
           <li class="dark:bg-slate-500 cursor-pointer {classHover}">item-5</li>
         </ul>
         <ul class="dark:bg-slate-600 p-2 space-y-2">
-          <p class="font-semibold line-clamp-2 mb-1 cursor-pointer {classHover}">
+          <p
+            class="font-semibold line-clamp-2 mb-1 cursor-pointer {classHover}"
+          >
             Subcategory-long -long -long -long
             -long-long-long-long-long-long-long-long-long-long-1
           </p>
-          <li class="dark:bg-slate-500 cursor-pointer {classHover}">item-long -long-long -1</li>
+          <li class="dark:bg-slate-500 cursor-pointer {classHover}">
+            item-long -long-long -1
+          </li>
           <li class="dark:bg-slate-500 cursor-pointer {classHover}">
             item--long-long-long-long -long-long2
           </li>
@@ -183,7 +207,6 @@ import HighlightSmallCard from "$lib/Highlights/HighlightSmallCard.svelte";
           <li class="dark:bg-slate-500 cursor-pointer {classHover}">item-4</li>
           <li class="dark:bg-slate-500 cursor-pointer {classHover}">item-5</li>
         </ul>
-
       </div>
       <!-- Brands -->
       <div class="grid grid-cols-2 md:grid-cols-4 gap-4 dark:bg-slate-600 px-2">
